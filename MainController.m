@@ -10,6 +10,8 @@
 
 @interface MainController ()
 
+@property (nonatomic,strong) UITableView * tableView;
+
 @end
 
 @implementation MainController
@@ -18,6 +20,11 @@
     [super viewDidLoad];
 
     [self.navigationItem setTitle:@"DYWeibo"];
+    self.tableView = ({
+        UITableView * tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
+        [self.view addSubview:tableView];
+        tableView;
+    });
 }
 
 - (void)didReceiveMemoryWarning {
