@@ -8,16 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		322BB4083BD86365F7B3DE6B /* libPods-DYWeibo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EFA4685B988445AAA36CAB3 /* libPods-DYWeibo.a */; };
+		3EC1E1D8901660E298B470DF /* WeiboTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1E6BAC94F4366CA19CFB3 /* WeiboTableCellView.m */; };
+		3EC1E354069F4D457752C2A4 /* DYWeiboFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1EDA678BF835861EE77D8 /* DYWeiboFrame.m */; };
 		63C492DD1BFDF7A4008D4F9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C492DC1BFDF7A4008D4F9C /* main.m */; };
 		63C492E01BFDF7A4008D4F9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C492DF1BFDF7A4008D4F9C /* AppDelegate.m */; };
 		63C492E61BFDF7A4008D4F9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C492E41BFDF7A4008D4F9C /* Main.storyboard */; };
 		63C492E81BFDF7A4008D4F9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C492E71BFDF7A4008D4F9C /* Assets.xcassets */; };
 		63C492EB1BFDF7A4008D4F9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C492E91BFDF7A4008D4F9C /* LaunchScreen.storyboard */; };
 		63C492F41BFE03B9008D4F9C /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C492F31BFE03B9008D4F9C /* MainController.m */; };
+		63C492FB1BFE07E4008D4F9C /* NSWeibos.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C492FA1BFE07E4008D4F9C /* NSWeibos.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0CBBBA0FB7643D643E245D13 /* Pods-DYWeibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYWeibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DYWeibo/Pods-DYWeibo.debug.xcconfig"; sourceTree = "<group>"; };
+		3EC1E0B543300C99BD9F353C /* WeiboTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboTableCellView.h; sourceTree = "<group>"; };
+		3EC1E6BAC94F4366CA19CFB3 /* WeiboTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboTableCellView.m; sourceTree = "<group>"; };
+		3EC1E9A605D6966265A6C88A /* DYWeiboFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYWeiboFrame.h; sourceTree = "<group>"; };
+		3EC1EDA678BF835861EE77D8 /* DYWeiboFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYWeiboFrame.m; sourceTree = "<group>"; };
 		3EFA4685B988445AAA36CAB3 /* libPods-DYWeibo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DYWeibo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		469D7D5DD4204FD488311C81 /* Pods-DYWeibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYWeibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DYWeibo/Pods-DYWeibo.release.xcconfig"; sourceTree = "<group>"; };
 		63C492D81BFDF7A4008D4F9C /* DYWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,6 +37,8 @@
 		63C492EC1BFDF7A4008D4F9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63C492F21BFE03B9008D4F9C /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainController.h; path = ../MainController.h; sourceTree = "<group>"; };
 		63C492F31BFE03B9008D4F9C /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainController.m; path = ../MainController.m; sourceTree = "<group>"; };
+		63C492F91BFE07E4008D4F9C /* NSWeibos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSWeibos.h; sourceTree = "<group>"; };
+		63C492FA1BFE07E4008D4F9C /* NSWeibos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSWeibos.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +60,15 @@
 				469D7D5DD4204FD488311C81 /* Pods-DYWeibo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		3EC1E3CA1161303C4A554586 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				3EC1E6BAC94F4366CA19CFB3 /* WeiboTableCellView.m */,
+				3EC1E0B543300C99BD9F353C /* WeiboTableCellView.h */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		41C4F6D81DB8195C29319E1D /* Frameworks */ = {
@@ -82,6 +100,7 @@
 		63C492DA1BFDF7A4008D4F9C /* DYWeibo */ = {
 			isa = PBXGroup;
 			children = (
+				63C492F51BFE0788008D4F9C /* DataModels */,
 				63C492F21BFE03B9008D4F9C /* MainController.h */,
 				63C492F31BFE03B9008D4F9C /* MainController.m */,
 				63C492DE1BFDF7A4008D4F9C /* AppDelegate.h */,
@@ -91,6 +110,7 @@
 				63C492E91BFDF7A4008D4F9C /* LaunchScreen.storyboard */,
 				63C492EC1BFDF7A4008D4F9C /* Info.plist */,
 				63C492DB1BFDF7A4008D4F9C /* Supporting Files */,
+				3EC1E3CA1161303C4A554586 /* CustomViews */,
 			);
 			path = DYWeibo;
 			sourceTree = "<group>";
@@ -101,6 +121,17 @@
 				63C492DC1BFDF7A4008D4F9C /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63C492F51BFE0788008D4F9C /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				63C492F91BFE07E4008D4F9C /* NSWeibos.h */,
+				63C492FA1BFE07E4008D4F9C /* NSWeibos.m */,
+				3EC1EDA678BF835861EE77D8 /* DYWeiboFrame.m */,
+				3EC1E9A605D6966265A6C88A /* DYWeiboFrame.h */,
+			);
+			name = DataModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,9 +255,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63C492FB1BFE07E4008D4F9C /* NSWeibos.m in Sources */,
 				63C492F41BFE03B9008D4F9C /* MainController.m in Sources */,
 				63C492E01BFDF7A4008D4F9C /* AppDelegate.m in Sources */,
 				63C492DD1BFDF7A4008D4F9C /* main.m in Sources */,
+				3EC1E1D8901660E298B470DF /* WeiboTableCellView.m in Sources */,
+				3EC1E354069F4D457752C2A4 /* DYWeiboFrame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
