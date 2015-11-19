@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainController.h
 //  DYWeibo
 //
 //  Created by YuLeiming on 19/11/2015.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MainController : UIViewController
 
 @end
-
