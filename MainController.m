@@ -26,6 +26,9 @@
 //页数
 @property (nonatomic, assign) int page;
 
+//下拉刷新控件
+@property (nonatomic, strong) UIRefreshControl * refreshController;
+
 @end
 
 @implementation MainController
@@ -44,7 +47,32 @@
         [self.view addSubview:tableView];
         tableView;
     });
+
+    self.refreshController = [[UIRefreshControl alloc] init];
+    [_tableView addSubview:_refreshController];
+    [self.refreshController addTarget:self action:@selector(refreshData) forControlEvents:UIControlEventValueChanged];
+
     [self refreshWeiboTimeline:YES];
+}
+
+/**
+ * 覆盖刷新
+ */
+- (void)refreshData
+{
+    NSLog(@"下拉刷新");
+    self.page = 1;
+    [self refreshWeiboTimeline:YES];
+}
+
+/**
+ * 加载更多
+ */
+- (void)loadMoreData
+{
+    NSLog(@"加载更多");
+    ++self.page;
+    [self refreshWeiboTimeline:NO];
 }
 
 - (void)initFrames: (BOOL) overide
@@ -70,10 +98,11 @@
     [manager GET:url parameters:nil success:^(NSURLSessionTask *task, id responseObject) {
         self.weibos = [NSWeibos mj_objectWithKeyValues:responseObject];
         [self initFrames:isOverideRefresh];
-//        [self.refreshController endRefreshing];
+        [self.refreshController endRefreshing];
         [_tableView reloadData];
     } failure:^(NSURLSessionTask *operation, NSError *error) {
         NSLog(@"Error: %@", error);
+        [self.refreshController endRefreshing];
     }];
 }
 
@@ -107,9 +136,9 @@
 {
     WeiboTableCellView * cell = [WeiboTableCellView cellWithTableView:tableView];
     [cell setWeiboFrame:self.frames[indexPath.row]];
-//    if (indexPath.row == [self.frames count] - 1){
-//        [self loadMoreData];
-//    }
+    if (indexPath.row == [self.frames count] - 1){
+        [self loadMoreData];
+    }
     return cell;
 }
 
