@@ -15,16 +15,21 @@ PODS:
   - AFNetworking/UIKit (3.0.0-beta.2):
     - AFNetworking/NSURLSession
   - MJExtension (3.0.3)
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
   - Toast (3.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0.0-beta.2)
   - MJExtension (~> 3.0.3)
+  - SDWebImage (~> 3.7.3)
   - Toast (~> 3.0)
 
 SPEC CHECKSUMS:
   AFNetworking: e3639f8310904c9888ddf03a2fa585633594a6e3
   MJExtension: de557e1c48ef3212590d3203764c8003fae68815
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
   Toast: 32c59229abfcf41850162b83bb9259dc84372473
 
 COCOAPODS: 0.39.0

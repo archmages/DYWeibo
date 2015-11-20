@@ -8,6 +8,7 @@ target 'DYWeibo' do
 pod 'Toast', '~> 3.0'
 pod 'AFNetworking', '~> 3.0.0-beta.2'
 pod 'MJExtension', '~> 3.0.3'
+pod 'SDWebImage', '~>3.7.3'
 
 end
 
