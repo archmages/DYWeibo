@@ -6,7 +6,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@class NSWeibo;
+@class Statuses;
 
 
 @interface DYWeiboFrame : NSObject
@@ -24,7 +24,7 @@
 @property (nonatomic, assign) CGFloat cellHeightF;
 
 //微博实体对象
-@property (nonatomic, strong) NSWeibo * weibo;
+@property (nonatomic, strong) Statuses * statuses;
 
 @property (nonatomic, assign) CGFloat screenWidth;
 

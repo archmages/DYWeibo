@@ -16,7 +16,7 @@
 		63C492E81BFDF7A4008D4F9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C492E71BFDF7A4008D4F9C /* Assets.xcassets */; };
 		63C492EB1BFDF7A4008D4F9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C492E91BFDF7A4008D4F9C /* LaunchScreen.storyboard */; };
 		63C492F41BFE03B9008D4F9C /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C492F31BFE03B9008D4F9C /* MainController.m */; };
-		63C492FB1BFE07E4008D4F9C /* NSWeibos.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C492FA1BFE07E4008D4F9C /* NSWeibos.m */; };
+		63C493191C0024FF008D4F9C /* DYWeiboPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C493181C0024FF008D4F9C /* DYWeiboPage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +37,8 @@
 		63C492EC1BFDF7A4008D4F9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63C492F21BFE03B9008D4F9C /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainController.h; path = ../MainController.h; sourceTree = "<group>"; };
 		63C492F31BFE03B9008D4F9C /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainController.m; path = ../MainController.m; sourceTree = "<group>"; };
-		63C492F91BFE07E4008D4F9C /* NSWeibos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSWeibos.h; sourceTree = "<group>"; };
-		63C492FA1BFE07E4008D4F9C /* NSWeibos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSWeibos.m; sourceTree = "<group>"; };
+		63C493171C0024FF008D4F9C /* DYWeiboPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYWeiboPage.h; sourceTree = "<group>"; };
+		63C493181C0024FF008D4F9C /* DYWeiboPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYWeiboPage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,10 +126,10 @@
 		63C492F51BFE0788008D4F9C /* DataModels */ = {
 			isa = PBXGroup;
 			children = (
-				63C492F91BFE07E4008D4F9C /* NSWeibos.h */,
-				63C492FA1BFE07E4008D4F9C /* NSWeibos.m */,
 				3EC1EDA678BF835861EE77D8 /* DYWeiboFrame.m */,
 				3EC1E9A605D6966265A6C88A /* DYWeiboFrame.h */,
+				63C493171C0024FF008D4F9C /* DYWeiboPage.h */,
+				63C493181C0024FF008D4F9C /* DYWeiboPage.m */,
 			);
 			name = DataModels;
 			sourceTree = "<group>";
@@ -255,12 +255,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63C492FB1BFE07E4008D4F9C /* NSWeibos.m in Sources */,
 				63C492F41BFE03B9008D4F9C /* MainController.m in Sources */,
 				63C492E01BFDF7A4008D4F9C /* AppDelegate.m in Sources */,
 				63C492DD1BFDF7A4008D4F9C /* main.m in Sources */,
 				3EC1E1D8901660E298B470DF /* WeiboTableCellView.m in Sources */,
 				3EC1E354069F4D457752C2A4 /* DYWeiboFrame.m in Sources */,
+				63C493191C0024FF008D4F9C /* DYWeiboPage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

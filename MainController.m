@@ -9,9 +9,10 @@
 #import "MainController.h"
 #import "AFHTTPSessionManager.h"
 #import "DYWeiboFrame.h"
-#import "NSWeibos.h"
 #import "NSObject+MJKeyValue.h"
 #import "WeiboTableCellView.h"
+#import "DYWeiboPage.h"
+#import "NSObject+MJProperty.h"
 
 #define URL_PREFIX  @"https://api.weibo.com/2/statuses/home_timeline.json?access_token=2.00y9lYWByY87OC8562fb01f14fvWTB&count=20"
 
@@ -21,7 +22,7 @@
 
 @property (nonatomic, strong) NSMutableArray * frames;
 
-@property (nonatomic, strong) NSWeibos * weibos;
+@property (nonatomic, strong) DYWeiboPage * weibos;
 
 //页数
 @property (nonatomic, assign) int page;
@@ -81,10 +82,10 @@
     {
         [self.frames removeAllObjects];
     }
-    for (NSWeibo *weibo in self.weibos.statuses) {
+    for (Statuses *statuses in self.weibos.statuses) {
         DYWeiboFrame * frame = [[DYWeiboFrame alloc] init];
         frame.screenWidth = self.view.frame.size.width;
-        frame.weibo = weibo;
+        frame.statuses = statuses;
         [self.frames addObject:frame];
     }
 
@@ -96,7 +97,7 @@
     NSString * url = [URL_PREFIX stringByAppendingString:[NSString stringWithFormat:@"&page=%i", self.page]];
     NSLog(@"url is: %@", url);
     [manager GET:url parameters:nil success:^(NSURLSessionTask *task, id responseObject) {
-        self.weibos = [NSWeibos mj_objectWithKeyValues:responseObject];
+        self.weibos = [DYWeiboPage mj_objectWithKeyValues:responseObject];
         [self initFrames:isOverideRefresh];
         [self.refreshController endRefreshing];
         [_tableView reloadData];

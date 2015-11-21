@@ -4,15 +4,26 @@
 //
 
 #import "DYWeiboFrame.h"
-#import "NSWeibos.h"
-
+#import "DYWeiboPage.h"
+#import "MJExtension.h"
 
 @implementation DYWeiboFrame {
 
 }
 
-- (void)setWeibo:(NSWeibo *)weibo {
-    _weibo = weibo;
+- (void)setStatuses:(Statuses *)status {
+    [User mj_setupReplacedKeyFromPropertyName:^NSDictionary *{
+        return @{@"desc" : @"desciption"
+        };
+    }];
+    _statuses = [Statuses mj_objectWithKeyValues: status];
+    NSMutableDictionary * statusesDict = [status mj_keyValues];
+    NSMutableDictionary * userDict = statusesDict[@"user"];
+    User *user = [[User alloc] init];
+    user.name = userDict[@"name"];
+    user.avatar_hd = userDict[@"avatar_hd"];
+//    User *user = [User mj_objectWithKeyValues:userDict];
+    _statuses.user = user;
     CGFloat padding = 10;
 
     self.iconF = ({
@@ -26,7 +37,7 @@
     self.nameF = ({
         CGFloat nameLabelX = CGRectGetMaxX(_iconF) + padding;
         CGFloat nameLabelY = padding;
-        CGSize size = [self sizeWithString:_weibo.user.name font:[UIFont systemFontOfSize:14] maxSize:CGSizeMake(_screenWidth - padding,MAXFLOAT)];
+        CGSize size = [self sizeWithString:_statuses.user.name font:[UIFont systemFontOfSize:14] maxSize:CGSizeMake(_screenWidth - padding,MAXFLOAT)];
         CGFloat nameLabelW = size.width;
         CGFloat nameLabelH = size.height;
         CGRectMake(nameLabelX, nameLabelY, nameLabelW, nameLabelH);
@@ -35,7 +46,7 @@
     self.introF = ({
         CGFloat introLabelX = padding;
         CGFloat introLabelY = CGRectGetMaxY(_iconF) + padding;
-        CGSize size = [self sizeWithString:_weibo.text font:[UIFont systemFontOfSize:14] maxSize:CGSizeMake(_screenWidth - padding,MAXFLOAT)];
+        CGSize size = [self sizeWithString:_statuses.text font:[UIFont systemFontOfSize:14] maxSize:CGSizeMake(_screenWidth - padding,MAXFLOAT)];
         CGFloat nameLabelW = size.width;
         CGFloat nameLabelH = size.height;
         CGRectMake(introLabelX, introLabelY, nameLabelW, nameLabelH);
@@ -44,7 +55,6 @@
     self.cellHeightF = ({
         CGRectGetMaxY(_introF) + padding;
     });
-
 }
 
 

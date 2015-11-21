@@ -5,7 +5,8 @@
 
 #import "WeiboTableCellView.h"
 #import "DYWeiboFrame.h"
-#import "NSWeibos.h"
+#import "DYWeiboPage.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface WeiboTableCellView()
 
@@ -82,9 +83,10 @@
 }
 
 - (void)bindData {
-    NSWeibo * weibo = _weiboFrame.weibo;
-    _nameLabel.text = weibo.user.name;
-    _introLabel.text = weibo.text;
+    Statuses *statuses = _weiboFrame.statuses;
+    _nameLabel.text = statuses.user.name;
+    _introLabel.text = statuses.text;
+    [_headView sd_setImageWithURL:statuses.user.avatar_hd];
 }
 
 - (void)bindFrame {

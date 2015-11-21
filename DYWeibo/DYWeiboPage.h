@@ -1,15 +1,15 @@
 //
-//  NSWeibos.h
+//  DYWeiboPage.h
 //  DYWeibo
 //
-//  Created by YuLeiming on 19/11/2015.
+//  Created by YuLeiming on 21/11/2015.
 //  Copyright © 2015 David.Yu. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@class NSWeibo,Visible,User,PicUrls;
-@interface NSWeibos : NSObject
+@class Statuses,Visible,User,Annotations;
+@interface DYWeiboPage : NSObject
 
 @property (nonatomic, strong) NSArray *ad;
 
@@ -29,14 +29,14 @@
 
 @property (nonatomic, assign) long long max_id;
 
-@property (nonatomic, strong) NSArray<NSWeibo *> *statuses;
+@property (nonatomic, strong) NSArray *statuses;
 
 @property (nonatomic, assign) long long next_cursor;
 
 @property (nonatomic, assign) long long since_id;
 
 @end
-@interface NSWeibo : NSObject
+@interface Statuses : NSObject
 
 @property (nonatomic, assign) NSInteger attitudes_count;
 
@@ -50,27 +50,25 @@
 
 @property (nonatomic, copy) NSString *mid;
 
+@property (nonatomic, strong) NSArray *annotations;
+
 @property (nonatomic, strong) NSArray *darwin_tags;
 
 @property (nonatomic, assign) NSInteger source_allowclick;
 
-@property (nonatomic, copy) NSString *original_pic;
-
 @property (nonatomic, copy) NSString *in_reply_to_screen_name;
+
+@property (nonatomic, strong) Statuses *retweeted_status;
 
 @property (nonatomic, assign) NSInteger comments_count;
 
-@property (nonatomic, strong) NSArray<PicUrls *> *pic_urls;
+@property (nonatomic, strong) NSArray *pic_urls;
 
 @property (nonatomic, assign) NSInteger reposts_count;
 
 @property (nonatomic, assign) BOOL isLongText;
 
 @property (nonatomic, assign) BOOL favorited;
-
-@property (nonatomic, copy) NSString *thumbnail_pic;
-
-@property (nonatomic, copy) NSString *bmiddle_pic;
 
 @property (nonatomic, assign) NSInteger userType;
 
@@ -124,6 +122,8 @@
 
 @property (nonatomic, copy) NSString *province;
 
+@property (nonatomic, copy) NSString *ability_tags;
+
 @property (nonatomic, assign) BOOL verified;
 
 @property (nonatomic, copy) NSString *url;
@@ -134,7 +134,7 @@
 
 @property (nonatomic, assign) BOOL follow_me;
 
-@property (nonatomic, copy) NSString *description;
+@property (nonatomic, copy) NSString *desc;
 
 @property (nonatomic, assign) NSInteger followers_count;
 
@@ -151,8 +151,6 @@
 @property (nonatomic, copy) NSString *verified_trade;
 
 @property (nonatomic, copy) NSString *profile_url;
-
-@property (nonatomic, copy) NSString *cover_image;
 
 @property (nonatomic, copy) NSString *weihao;
 
@@ -222,9 +220,9 @@
 
 @end
 
-@interface PicUrls : NSObject
+@interface Annotations : NSObject
 
-@property (nonatomic, copy) NSString *thumbnail_pic;
+@property (nonatomic, copy) NSString *client_mblogid;
 
 @end
 
