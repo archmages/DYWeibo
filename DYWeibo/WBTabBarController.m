@@ -32,16 +32,16 @@
 
     _homeViewController = [[HomeViewController alloc] init];
     [self addChildViewController:_homeViewController];
-    [self addChildController:_homeViewController title:@"首页" imageNormal:@"com_bt_tab_backlog_normal" imagePressed:@"com_bt_tab_backlog_pressed"];
+    [self addChildController:_homeViewController title:@"首页" imageNormal:@"com_bt_tabhome_menu_home_normal" imagePressed:@"com_bt_tabhome_menu_home_pressed"];
 
     _messageViewController = [[MessageViewController alloc] init];
-    [self addChildController:_messageViewController title:@"消息" imageNormal:@"com_bt_tab_backlog_normal" imagePressed:@"com_bt_tab_backlog_pressed"];
+    [self addChildController:_messageViewController title:@"消息" imageNormal:@"com_bt_tabhome_menu_message_normal" imagePressed:@"com_bt_tabhome_menu_message_pressed"];
 
     _discoverViewController = [[DiscoverViewController alloc] init];
-    [self addChildController:_discoverViewController title:@"发现" imageNormal:@"com_bt_tab_backlog_normal" imagePressed:@"com_bt_tab_backlog_pressed"];
+    [self addChildController:_discoverViewController title:@"发现" imageNormal:@"com_bt_tabhome_menu_search_normal" imagePressed:@"com_bt_tabhome_menu_search_pressed"];
 
     _profileViewController = [[ProfileViewController alloc] init];
-    [self addChildController:_profileViewController title:@"个人" imageNormal:@"com_bt_tab_backlog_normal" imagePressed:@"com_bt_tab_backlog_pressed"];
+    [self addChildController:_profileViewController title:@"个人" imageNormal:@"com_bt_tabhome_menu_myself_normal" imagePressed:@"com_bt_tabhome_menu_myself_pressed"];
 
     WBTabBar *tabBar = [[WBTabBar alloc] init];
     tabBar.tabBarDelegate = self;
@@ -71,7 +71,7 @@
     [childViewController.tabBarItem setTitleTextAttributes:
             @{NSForegroundColorAttributeName: [UIColor pxColorWithHexValue:@"#9c9c9c"]} forState:UIControlStateNormal];
     [childViewController.tabBarItem setTitleTextAttributes:
-            @{NSForegroundColorAttributeName: [UIColor pxColorWithHexValue:@"#77d2c5"]} forState:UIControlStateSelected];
+            @{NSForegroundColorAttributeName: [UIColor pxColorWithHexValue:@"#58ccee"]} forState:UIControlStateSelected];
 
     // 使用系统默认的UINavigationController
     [self addChildViewController:[[UINavigationController alloc] initWithRootViewController:childViewController]];
