@@ -1,5 +1,6 @@
 # DYWeibo
 Start developing sina weibo ios client from scratch by objective-c
+![](http://ww1.sinaimg.cn/large/006jcfq8gw1eyp2j36obaj309d0goaay.jpg)
 
 # Functions
 * Weibo Oauth login integration
