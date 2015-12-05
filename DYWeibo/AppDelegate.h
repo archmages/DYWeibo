@@ -7,15 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MainController.h"
+
+@class WBTabBarController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) MainController *viewController;
-
-@property (strong, nonatomic) UINavigationController *navController;
+@property (strong, nonatomic) WBTabBarController *viewController;
 
 @end
 

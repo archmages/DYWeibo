@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "WBTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -19,10 +20,10 @@
 
     self.window                                   = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor                   = [UIColor whiteColor];
-    self.viewController                           = [[MainController alloc] init];
-    self.navController                            = [[UINavigationController alloc] initWithRootViewController:_viewController];
-    self.navController.navigationBar.barTintColor = [UIColor whiteColor];
-    self.window.rootViewController                = _navController;
+    self.viewController                           = [[WBTabBarController alloc] init];
+//    self.navController                            = [[UINavigationController alloc] initWithRootViewController:_viewController];
+//    self.navController.navigationBar.barTintColor = [UIColor whiteColor];
+    self.window.rootViewController                = _viewController;
     [self.window makeKeyAndVisible];
     return YES;
 }

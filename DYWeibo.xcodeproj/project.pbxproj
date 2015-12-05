@@ -10,12 +10,19 @@
 		322BB4083BD86365F7B3DE6B /* libPods-DYWeibo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EFA4685B988445AAA36CAB3 /* libPods-DYWeibo.a */; };
 		3EC1E1D8901660E298B470DF /* WeiboTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1E6BAC94F4366CA19CFB3 /* WeiboTableCellView.m */; };
 		3EC1E354069F4D457752C2A4 /* DYWeiboFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1EDA678BF835861EE77D8 /* DYWeiboFrame.m */; };
+		630488EE1C12725300B08B5A /* WBTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 630488ED1C12725300B08B5A /* WBTabBar.m */; };
+		630488F71C1286AC00B08B5A /* WBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630488F61C1286AC00B08B5A /* WBTabBarController.m */; };
+		630488FA1C1287A300B08B5A /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630488F91C1287A300B08B5A /* MessageViewController.m */; };
+		630488FD1C1287BC00B08B5A /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630488FC1C1287BC00B08B5A /* DiscoverViewController.m */; };
+		630489001C1287CD00B08B5A /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630488FF1C1287CD00B08B5A /* ProfileViewController.m */; };
+		630489031C128A0A00B08B5A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630489021C128A0A00B08B5A /* HomeViewController.m */; };
+		630489071C1299A800B08B5A /* UIColor+PXExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 630489061C1299A800B08B5A /* UIColor+PXExtensions.m */; };
+		6304890B1C12BF4B00B08B5A /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6304890A1C12BF4B00B08B5A /* ComposeViewController.m */; };
 		63C492DD1BFDF7A4008D4F9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C492DC1BFDF7A4008D4F9C /* main.m */; };
 		63C492E01BFDF7A4008D4F9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C492DF1BFDF7A4008D4F9C /* AppDelegate.m */; };
 		63C492E61BFDF7A4008D4F9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C492E41BFDF7A4008D4F9C /* Main.storyboard */; };
 		63C492E81BFDF7A4008D4F9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C492E71BFDF7A4008D4F9C /* Assets.xcassets */; };
 		63C492EB1BFDF7A4008D4F9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C492E91BFDF7A4008D4F9C /* LaunchScreen.storyboard */; };
-		63C492F41BFE03B9008D4F9C /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C492F31BFE03B9008D4F9C /* MainController.m */; };
 		63C493191C0024FF008D4F9C /* DYWeiboPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C493181C0024FF008D4F9C /* DYWeiboPage.m */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +34,22 @@
 		3EC1EDA678BF835861EE77D8 /* DYWeiboFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYWeiboFrame.m; sourceTree = "<group>"; };
 		3EFA4685B988445AAA36CAB3 /* libPods-DYWeibo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DYWeibo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		469D7D5DD4204FD488311C81 /* Pods-DYWeibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYWeibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DYWeibo/Pods-DYWeibo.release.xcconfig"; sourceTree = "<group>"; };
+		630488EC1C12725300B08B5A /* WBTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTabBar.h; sourceTree = "<group>"; };
+		630488ED1C12725300B08B5A /* WBTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTabBar.m; sourceTree = "<group>"; };
+		630488F51C1286AC00B08B5A /* WBTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTabBarController.h; sourceTree = "<group>"; };
+		630488F61C1286AC00B08B5A /* WBTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTabBarController.m; sourceTree = "<group>"; };
+		630488F81C1287A300B08B5A /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		630488F91C1287A300B08B5A /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		630488FB1C1287BC00B08B5A /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
+		630488FC1C1287BC00B08B5A /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
+		630488FE1C1287CD00B08B5A /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		630488FF1C1287CD00B08B5A /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		630489011C128A0A00B08B5A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		630489021C128A0A00B08B5A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		630489051C1299A800B08B5A /* UIColor+PXExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PXExtensions.h"; sourceTree = "<group>"; };
+		630489061C1299A800B08B5A /* UIColor+PXExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PXExtensions.m"; sourceTree = "<group>"; };
+		630489091C12BF4B00B08B5A /* ComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeViewController.h; sourceTree = "<group>"; };
+		6304890A1C12BF4B00B08B5A /* ComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeViewController.m; sourceTree = "<group>"; };
 		63C492D81BFDF7A4008D4F9C /* DYWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C492DC1BFDF7A4008D4F9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		63C492DE1BFDF7A4008D4F9C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -35,8 +58,6 @@
 		63C492E71BFDF7A4008D4F9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63C492EA1BFDF7A4008D4F9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63C492EC1BFDF7A4008D4F9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63C492F21BFE03B9008D4F9C /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainController.h; path = ../MainController.h; sourceTree = "<group>"; };
-		63C492F31BFE03B9008D4F9C /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainController.m; path = ../MainController.m; sourceTree = "<group>"; };
 		63C493171C0024FF008D4F9C /* DYWeiboPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYWeiboPage.h; sourceTree = "<group>"; };
 		63C493181C0024FF008D4F9C /* DYWeiboPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYWeiboPage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +88,8 @@
 			children = (
 				3EC1E6BAC94F4366CA19CFB3 /* WeiboTableCellView.m */,
 				3EC1E0B543300C99BD9F353C /* WeiboTableCellView.h */,
+				630488EC1C12725300B08B5A /* WBTabBar.h */,
+				630488ED1C12725300B08B5A /* WBTabBar.m */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -77,6 +100,41 @@
 				3EFA4685B988445AAA36CAB3 /* libPods-DYWeibo.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		630488F41C12866800B08B5A /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				630488F51C1286AC00B08B5A /* WBTabBarController.h */,
+				630488F61C1286AC00B08B5A /* WBTabBarController.m */,
+				630488F81C1287A300B08B5A /* MessageViewController.h */,
+				630488F91C1287A300B08B5A /* MessageViewController.m */,
+				630488FB1C1287BC00B08B5A /* DiscoverViewController.h */,
+				630488FC1C1287BC00B08B5A /* DiscoverViewController.m */,
+				630488FE1C1287CD00B08B5A /* ProfileViewController.h */,
+				630488FF1C1287CD00B08B5A /* ProfileViewController.m */,
+				630489011C128A0A00B08B5A /* HomeViewController.h */,
+				630489021C128A0A00B08B5A /* HomeViewController.m */,
+			);
+			name = MainPage;
+			sourceTree = "<group>";
+		};
+		630489041C12997E00B08B5A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				630489051C1299A800B08B5A /* UIColor+PXExtensions.h */,
+				630489061C1299A800B08B5A /* UIColor+PXExtensions.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		630489081C12BF2A00B08B5A /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				630489091C12BF4B00B08B5A /* ComposeViewController.h */,
+				6304890A1C12BF4B00B08B5A /* ComposeViewController.m */,
+			);
+			name = Compose;
 			sourceTree = "<group>";
 		};
 		63C492CF1BFDF7A4008D4F9C = {
@@ -100,9 +158,10 @@
 		63C492DA1BFDF7A4008D4F9C /* DYWeibo */ = {
 			isa = PBXGroup;
 			children = (
+				630489081C12BF2A00B08B5A /* Compose */,
+				630489041C12997E00B08B5A /* Extensions */,
+				630488F41C12866800B08B5A /* MainPage */,
 				63C492F51BFE0788008D4F9C /* DataModels */,
-				63C492F21BFE03B9008D4F9C /* MainController.h */,
-				63C492F31BFE03B9008D4F9C /* MainController.m */,
 				63C492DE1BFDF7A4008D4F9C /* AppDelegate.h */,
 				63C492DF1BFDF7A4008D4F9C /* AppDelegate.m */,
 				63C492E41BFDF7A4008D4F9C /* Main.storyboard */,
@@ -255,11 +314,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63C492F41BFE03B9008D4F9C /* MainController.m in Sources */,
+				630488F71C1286AC00B08B5A /* WBTabBarController.m in Sources */,
+				630489071C1299A800B08B5A /* UIColor+PXExtensions.m in Sources */,
 				63C492E01BFDF7A4008D4F9C /* AppDelegate.m in Sources */,
 				63C492DD1BFDF7A4008D4F9C /* main.m in Sources */,
 				3EC1E1D8901660E298B470DF /* WeiboTableCellView.m in Sources */,
+				630488FD1C1287BC00B08B5A /* DiscoverViewController.m in Sources */,
 				3EC1E354069F4D457752C2A4 /* DYWeiboFrame.m in Sources */,
+				630489031C128A0A00B08B5A /* HomeViewController.m in Sources */,
+				630488FA1C1287A300B08B5A /* MessageViewController.m in Sources */,
+				630489001C1287CD00B08B5A /* ProfileViewController.m in Sources */,
+				6304890B1C12BF4B00B08B5A /* ComposeViewController.m in Sources */,
+				630488EE1C12725300B08B5A /* WBTabBar.m in Sources */,
 				63C493191C0024FF008D4F9C /* DYWeiboPage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,7 +438,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DYWeibo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = github.archmage.DYWeibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -385,7 +451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DYWeibo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = github.archmage.DYWeibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
