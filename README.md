@@ -20,6 +20,7 @@ Start developing sina weibo ios client from scratch by objective-c
 * AutoLayout
 * TipsView
 * AlertDialogView
+* Emoji expression
 * Image pick
 * Image Upload
 * Image Gallery
